@@ -9,6 +9,8 @@ body {
   margin: 0;
 }
 .results-card {
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
   width: 736px;
   background-color: #ffffff;
@@ -154,4 +156,41 @@ body {
 
 .btn-continue:hover {
   background: linear-gradient(180deg, #7755ff 0%, #6943ff 0.01%, #2f2ce9 100%);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0;
+  }
+
+  .results-card {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .result-section {
+    border-radius: 0 0 32px 32px; 
+    padding: 30px 20px;
+  }
+
+  .summary-section {
+    padding: 30px 20px;
+  }
+
+  .score-circle {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .score-number {
+    font-size: 56px;
+  }
 }
